@@ -6,7 +6,7 @@
 	<title>cytoscape-popper.js demo</title>
 
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-	<script src="cytoscape.min.js"></script>
+	<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 
 	<!-- for testing with local version of cytoscape.js -->
 	<!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
@@ -69,21 +69,11 @@
 
 				elements: {
 					nodes: [
-						{ data: { id: 'Terra seca' } },
-                                                { data: { id: 'Estonia' } },
-						{ data: { id: 'winner 1' } },
-                                                { data: { id: 'sharapovas' } },
-                                                { data: { id: 'Pastanaga' } },
-						{ data: { id: 'winner 2' } },
-                                                { data: { id: 'semifinal 1' } }
+						{ data: { id: 'a' } },
+						{ data: { id: 'b' } }
 					],
 					edges: [
-						{ data: { id: '1', source: 'Terra seca', target: 'winner 1' } },
-                                                { data: { id: '2', source: 'Estonia', target: 'winner 1' } },
-                                                { data: { id: '3', source: 'sharapovas', target: 'winner 2' } },
-                                                { data: { id: '4', source: 'Pastanaga', target: 'winner 2' } },
-                                                { data: { id: '5', source: 'winner 1', target: 'semifinal 1' } },
-                                                { data: { id: '6', source: 'winner 2', target: 'semifinal 1' } }
+						{ data: { id: 'ab', source: 'a', target: 'b' } }
 					]
 				},
 
